@@ -1,0 +1,57 @@
+<html>
+<body>
+<form name="gamesearchform" action="./games_results.php" method="get">
+
+<!-- Enter Game Search Constraints.<br>
+Title: <input type="text" name="title"/> <input type="checkbox" name="exactTitle" value="true"> Exact? <br> 
+Year: <input type="text" name="year"/><br>
+Engine: <input type="text" name="engine"/> <input type="checkbox" name="exactEngine" value="true"> Exact? <br>
+Developer: <input type="text" name="developer"/><br>
+Publisher: <input type="text" name="publisher"/><br>
+Console: <input type="text" name="console"/> <input type="checkbox" name="exactConsole" value="true"> Exact? <br> -->
+
+<fieldset>
+	<legend>New User</legend>
+	<div><label>Login Name: </label><input type="text" name="login_name"></div>
+	<div><label>Display Name: </label><input type="text" name="display_name"></div>
+	<div><label>Password: </label><input type="text" name="password"></div>
+	<div><label>Password (again):</label><input type="text" name="password_two"></div>
+	<div><input type="submit" value="Submit" class="submitbutton"/></div> 
+</fieldset>
+
+<fieldset>
+	<legend>Existing User</legend>
+	<div><label>Login Name: </label><input type="text" name="login_name"></div>
+	<div><label>Password: </label><input type="text" name="password"></div>
+	<div><input type="submit" value="Submit" class="submitbutton"/></div> 
+</fieldset>
+
+<fieldset>
+	<legend>Change Password</legend>
+	<div><label>Old Password: </label><input type="text" name="password"></div>
+	<div><label>New Password: </label><input type="text" name="password_new"></div>
+	<div><input type="submit" value="Submit" class="submitbutton"/></div> 
+</fieldset>
+</form>
+
+
+<style>
+fieldset {
+	width: 300px;
+}
+legend {
+	font-size: 20px;
+}
+label {
+	clear: left;
+	float: left;
+	width: 8em;
+	font-weight: bold;
+}
+input.submitbutton {
+	display:block;
+    margin: 10 auto 0 auto;
+}
+</style>
+</body>
+</html>
